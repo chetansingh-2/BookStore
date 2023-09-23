@@ -21,7 +21,11 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
+<<<<<<< HEAD
       .post("https://bookstore-hdef.onrender.com/books", data)
+=======
+      .post("https://book-store-itmz.vercel.app/books", data)
+>>>>>>> e1300595dbefa92417409c3fb4c4a750831072ae
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Created successfully", { variant: "success" });

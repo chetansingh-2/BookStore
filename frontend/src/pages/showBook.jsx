@@ -12,7 +12,11 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
+<<<<<<< HEAD
       .get(`https://bookstore-hdef.onrender.com/books/${id}`)
+=======
+      .get(`https://book-store-itmz.vercel.app/books/${id}`)
+>>>>>>> e1300595dbefa92417409c3fb4c4a750831072ae
       .then((response) => {
         setBook(response.data);
         setLoading(false);
